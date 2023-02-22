@@ -17,4 +17,31 @@
     </servlet-mapping>
 
 
+    //Gerneric Servlet-Declaratiom
+    <servlet>
+        <servlet-name>Second</servlet-name>
+        <servlet-class>com.learn.serv.geeteh.helloservlet.SecondServlet</servlet-class>
+    </servlet>
+
+
+    //Generic Sevlet-mapping
+    <servlet-mapping>
+        <servlet-name>Second</servlet-name>
+        <url-pattern>/Gens</url-pattern>
+    </servlet-mapping>
+
+
+    //Http Servlet-Declaratiom
+    <servlet>
+        <servlet-name>Httpserve</servlet-name>
+        <servlet-class>com.learn.serv.geeteh.helloservlet.ProtocolSpecific</servlet-class>
+    </servlet>
+
+
+    //Http Sevlet-mapping
+    <servlet-mapping>
+        <servlet-name>Httpserve</servlet-name>
+        <url-pattern>/httpserve</url-pattern>
+    </servlet-mapping>
+
 </web-app>
