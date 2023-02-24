@@ -18,7 +18,7 @@
 
 
     //Gerneric Servlet-Declaratiom
-    <servlet>
+    <servlet>a
         <servlet-name>Second</servlet-name>
         <servlet-class>com.learn.serv.geeteh.helloservlet.SecondServlet</servlet-class>
     </servlet>
@@ -43,5 +43,16 @@
         <servlet-name>Httpserve</servlet-name>
         <url-pattern>/httpserve</url-pattern>
     </servlet-mapping>
+
+    //Register Servlet
+    <servlet>
+        <servlet-name>RegisterServe</servlet-name>
+        <servlet-class>com.learn.serv.geeteh.helloservlet.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServe</servlet-name>
+        <url-pattern>/regs</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>
