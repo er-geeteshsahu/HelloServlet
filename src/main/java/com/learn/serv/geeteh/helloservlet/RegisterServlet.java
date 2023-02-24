@@ -37,10 +37,17 @@ public class RegisterServlet extends HttpServlet {
             out.println("<h2>Course : " + course + "</h2>");
             printOnConsole(name,password,email,gender,course);
 
+            RequestDispatcher resd = request.getRequestDispatcher("success");
+            resd.forward(request,response);
+
+
         }
         else{
             out.println("<h1>You have not checked the Terms & Conditions !!!</h1>");
             System.out.println("You have not checked the Terms & Conditions !!!");
+
+            RequestDispatcher resd = request.getRequestDispatcher("register.html");
+            resd.include(request,response);
         }
 
     }
@@ -49,7 +56,7 @@ public class RegisterServlet extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException ,IOException {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-        out.println("<h2>Welcome! To Register Servlet</h2?");
+        out.println("<h2>Welcome! To Register Servlet</h2>");
         String name = request.getParameter("user_name");
         String password = request.getParameter("user_password");
         String email = request.getParameter("user_email");
