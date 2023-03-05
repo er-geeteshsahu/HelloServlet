@@ -31,6 +31,7 @@
                             <input type="text" name="user_name" placeholder="Enter user name">
                             <input type="password" name="user_password" placeholder="Enter user password">
                             <input type="email" name="user_email" placeholder="Enter user email">
+                            <input type="number" name="user_number" placeholder="Enter user mobile no.">
 
                             <button type="submit" class="btn red">Submit</button>
                         </form>
